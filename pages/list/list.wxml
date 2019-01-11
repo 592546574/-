@@ -15,8 +15,9 @@
     </swiper-item>
   </swiper>
   <block wx:for='{{datasArr}}' wx:key='{{index}}'>
-    <view>
-     <template is="listTmp" />
+    <view catchtap='toDateil'>
+    <!-- data='{{...item}}'key的值 -->
+     <template is="listTmp" data='{{...item}}'/>  
     </view>
   </block>
 </view>

@@ -1,5 +1,5 @@
 // pages/list/list.js
-//获取数据
+//获取数据！
 let datas = require('../../datas/list-data.js')
 Page({
 
@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    //给获取的数据定义一个空数组
+    //给获取的数据定义一个空数组！
     dataArr:[]
   },
 
@@ -15,11 +15,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    //把获取到的数组放到定义的空数组里
     this.setData({
       datasArr:datas.list_data
     })
   },
-
+  //跳转
+  toDateil() {
+    wx.navigateTo({
+      url: '/pages/detail/detail',
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
