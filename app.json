@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/list/list",
+    "pages/index/index",
+    "pages/listTmp/listTmp",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "navigationBarTitleText": "lalala",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#489B81"
+  }
+}

@@ -1,0 +1,7 @@
+<view class='container'>
+  <image src='/images/index/cart.jpg'></image>
+  <text class='content'>hello 怎扰@</text>
+  <view class='applet' bindtap="handleTab">
+    <text >小程序之旅</text>
+  </view>
+</view>

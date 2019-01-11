@@ -1,0 +1,22 @@
+<import src="/pages/listTmp/listTmp"/>
+<view>
+  <swiper indicator-dots indicator-color='yellow' indicator-active-color='red' autoplay circular='true'>
+    <swiper-item>
+      <image src='/images/detail/carousel/01.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/detail/carousel/02.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/detail/carousel/03.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/detail/carousel/04.jpg'></image>
+    </swiper-item>
+  </swiper>
+  <block>
+    <view>
+     <template is="listTmp" />
+    </view>
+  </block>
+</view>
