@@ -21,9 +21,15 @@ Page({
     })
   },
   //跳转
-  toDateil() {
+  toDateil(event) {
+    console.log(event)
+    //把拿到的数据传过去detail
+    let index =event.currentTarget.dataset.id;  
+    console.log(index)
+    let url = '/pages/detail/detail?id =' + index; 
+    console.log(url)
     wx.navigateTo({
-      url: '/pages/detail/detail',
+      url
     })
   },
   /**
