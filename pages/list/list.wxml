@@ -14,7 +14,7 @@
       <image src='/images/detail/carousel/04.jpg'></image>
     </swiper-item>
   </swiper>
-  <block>
+  <block wx:for='{{datasArr}}' wx:key='{{index}}'>
     <view>
      <template is="listTmp" />
     </view>
