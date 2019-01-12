@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    msg:'初始化数据',
+    userInfo:{}
   },
   handleTab(){
     wx.navigateTo({
@@ -17,7 +18,26 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    //获取用户登录的信息
+    wx.getUserInfo({
+      success:(data) =>{
+        console.log('data')
+        this.setData({
+          userInfo:data.userInfo
+        })
+      },
+      fail(){
+        console.log('获取失败')
+      }
+    })
+  },
+  //处理授权的回调
+  handleGetUserInfo(msg) {
+    if(msg.detail.userInfo){
+      this.setData({
+        userInfo:msg.detail.userInfo
+      })
+    }
   },
 
   /**

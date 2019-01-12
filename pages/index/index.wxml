@@ -1,6 +1,7 @@
 <view class='container'>
-  <image src='/images/index/cart.jpg'></image>
-  <text class='content'>hello 怎扰@</text>
+  <image wx:if='{{userInfo.avatarUrl}}' class='avatar' src='{{userInfo.avatarUrl}}'></image>
+  <button wx:else open-type='getUserInfo' bindtap='handleGetUserInfo'>点击获取用户消息</button>
+  <text class='content'>hello {{userInfo.nickName}}</text>
   <view class='applet' bindtap="handleTab">
     <text >小程序之旅</text>
   </view>

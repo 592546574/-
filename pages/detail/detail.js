@@ -9,6 +9,7 @@ Page({
     detailObj:{},
     //用来标识是否收藏
     isCollected:false
+    
   },
 
   /**
