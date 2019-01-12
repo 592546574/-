@@ -20,7 +20,8 @@
 }
 .content {
   font-size: 36rpx;
-  text-indent: 48rpx;
-  letter-spacing: 4rpx; /*给字母设置间距，对中文也生效*/
+   /* 首行缩进 */
+  text-indent: 48rpx;    
+  letter-spacing: 4rpx; /*设置字间距*/
   /* word-spacing: 50rpx; 给单词设置间距，对中文不生效 */
 }

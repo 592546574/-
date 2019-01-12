@@ -28,3 +28,6 @@ dedailContainer{
   background: #eee;
   z-index: -1
 }
+button{
+  width: 100%;
+}

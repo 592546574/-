@@ -1,20 +1,21 @@
 <!--pages/detail/detail.wxml-->
 <view class='dedailContainer'>
-  <image src='/images/detail/carousel/01.jpg' class='dataImg'></image>
+  <image src='{{detailObj.detail_img}}' class='dataImg'></image>
   <view class='avatar_date'>
-    <image src='/images/avatar/0.png'></image>
-    <text>钢铁侠</text>
+    <image src='{{detailObj.avatar}}'></image>
+    <text>{{detailObj.author}}</text>
     <text>发布于</text>
-    <text>2019 1 11</text>
+    <text>{{detailObj.date}}</text>
   </view>
-  <text class='company'>教育理念</text>
+  <text class='company'>{{detailObj.title}}</text>
   <view class='parent'>
     <view class='share_anti'>
-      <image src='/images/icon/collection-anti.png'></image>
-      <image src='/images/icon/share-anti.png'></image>
-    </view>
+    <!--  -->
+      <image catchtab="handleCollection" src="{{isCollected?'/images/icon/collection.png':'/images/icon/collection-anti.png'}}"></image>
+      <image bindtap='handleShare' src='/images/icon/share-anti.png'></image>
+    </view> 
     <view class='line'></view>
   </view>
    <button>转发文章</button>
-  <text class='content'>像我这样的人像我这样的人像我这样的人像我这样的人像我这样的人像我这样的人像我这样的人像我这样的人像我这样的人像我这样的人像我这样的人像我这样的人像我这样的人像我这样的人像我这样的人像我这样的人像我这样的人像我这样的人像我这样的人</text>
+  <text class='content'>{{detailObj.detail_content}}</text>
 </view>

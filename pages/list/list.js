@@ -26,7 +26,7 @@ Page({
     //把拿到的数据传过去detail
     let index =event.currentTarget.dataset.id;  
     console.log(index)
-    let url = '/pages/detail/detail?id =' + index; 
+    let url = '/pages/detail/detail?id=' + index; 
     console.log(url)
     wx.navigateTo({
       url
